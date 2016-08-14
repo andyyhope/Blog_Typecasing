@@ -7,6 +7,8 @@ Every once in a while you come across one of those unicorn edge cases that force
 
 I had a chance to revisit, remodel and refactor an API response for one of the apps I work on where it would receive a JSON structure that had mixed models inside of an array. The reason why they’re mixed is because they need to be represented in a UITableView from within the same section, in a chronologial order. So this made receiving the data in two separate arrays and combining them afterwards a non-option.
 
+Read the full article [here](https://medium.com/@andyyhope)
+
 --
 
 tl;dr:
