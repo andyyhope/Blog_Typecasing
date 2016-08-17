@@ -1,6 +1,7 @@
 
 // Swift: Typecasing
 // Enums as data models?
+// https://medium.com/swift-programming/swift-typecasing-3cd156c323e#.e4kj5iojj
 //
 // Author: Andyy Hope
 //
