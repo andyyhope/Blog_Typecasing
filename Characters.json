@@ -1,0 +1,32 @@
+{
+    "characters" : [
+        {
+            "type": "hero",
+            "name": "Jake",
+            "power": "Shapeshift"
+        },
+        {
+            "type": "hero",
+            "name": "Finn",
+            "power": "Grass sword"
+        },
+        {
+            "type": "princess",
+            "name": "Lumpy Space Princess",
+            "kingdom": "Lumpy Space"
+        },
+        {
+            "type": "civilian",
+            "name": "BMO"
+        },
+        {
+            "type": "princess",
+            "name": "Princess Bubblegum",
+            "kingdom": "Candy"
+        },
+        {
+            "type": "civilian",
+            "name": "Ricardo"
+        }
+    ]
+}
