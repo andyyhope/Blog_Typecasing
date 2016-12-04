@@ -3,16 +3,22 @@
 //
 // Author: Andyy Hope
 // Twitter: @andyyhope
+// Medium: medium.com/@andyyhope
+
 import Foundation
+
 // MARK: - Models
+
 struct Hero {
     let name: String
     let power: String
+    
     init?(json: [String : AnyObject]) {
         guard
             let name = json["name"] as? String,
             let power = json["power"] as? String
             else { return nil }
+        
         self.name = name
         self.power = power
     }
