@@ -1,28 +1,18 @@
-
 // Swift: Typecasing
 // Enums as data models?
-// https://medium.com/swift-programming/swift-typecasing-3cd156c323e#.e4kj5iojj
 //
 // Author: Andyy Hope
-//
 // Twitter: @andyyhope
-
-
 import Foundation
-
-
 // MARK: - Models
-
 struct Hero {
     let name: String
     let power: String
-    
     init?(json: [String : AnyObject]) {
-        guard let
-            name = json["name"] as? String,
-            power = json["power"] as? String
+        guard
+            let name = json["name"] as? String,
+            let power = json["power"] as? String
             else { return nil }
-        
         self.name = name
         self.power = power
     }
@@ -33,11 +23,11 @@ struct Princess {
     let kingdom: String
     
     init?(json: [String : AnyObject]) {
-        guard let
-            name = json["name"] as? String,
-            kingdom = json["kingdom"] as? String
+        guard
+            let name = json["name"] as? String,
+            let kingdom = json["kingdom"] as? String
             else { return nil }
-
+        
         self.name = name
         self.kingdom = kingdom
     }
@@ -48,7 +38,7 @@ struct Civilian {
     
     init?(json: [String : AnyObject]) {
         guard let name = json["name"] as? String else { return nil }
-
+        
         self.name = name
     }
 }
@@ -58,15 +48,15 @@ enum Character {
     case princess(Princess)
     case civilian(Civilian)
     
-    private enum Type : String {
+    private enum `Type`: String {
         case hero, princess, civilian
         static let key = "type"
     }
     
     init?(json: [String : AnyObject]) {
-        guard let
-            string = json[Type.key] as? String,
-            type = Type(rawValue: string)
+        guard
+            let string = json[Type.key] as? String,
+            let type = Type(rawValue: string)
             else { return nil }
         
         switch type {
@@ -112,7 +102,3 @@ func printPower(character: Character) {
         print(hero.power)
     }
 }
-
-
-
-
